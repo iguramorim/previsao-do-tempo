@@ -1,0 +1,168 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+     font-family: "Montserrat", sans-serif;
+}
+
+body {
+     background-color: #141414;
+     color: #ebebeb;
+     margin: 0 7px;
+}
+
+input,
+button {
+     width: 100%;
+     font-family: "Montserrat", sans-serif;
+     outline: none;
+     color: #ebebeb;
+}
+
+#container {
+     max-width: 700px;
+     margin: 2rem auto;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     border: 1px solid #ffffff29;
+     border-radius: 10px;
+     padding: 20px;
+}
+
+#search {
+     display: flex;
+     align-items: center;
+     border: 1px solid #ffffff29;
+     border-radius: 10px;
+     overflow: hidden;
+}
+
+.fa-location-dot {
+     width: 50px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 25px;
+}
+
+#city_name,
+#btn {
+     padding: 12px;
+}
+
+#city_name {
+     background-color: transparent;
+     border: none;
+     font-size: 18px;
+}
+
+#btn {
+     background-color: #3d7aec;
+     border: none;
+     width: 60px;
+     height: 50px;
+     font-size: 20px;
+     cursor: pointer;
+     transition: 0.3s all ease;
+}
+
+#btn:hover {
+     opacity: 0.8;
+}
+
+#weather {
+     display: none;
+     flex-direction: column;
+     gap: 10px;
+}
+
+#weather.show {
+     display: flex;
+}
+
+#title {
+     margin: 1rem 0;
+     font-size: 35px;
+}
+
+#infos {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     gap: 10px;
+}
+
+#temp {
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     background-color: #181818;
+     border-radius: 10px;
+     padding: 20px 5px;
+}
+
+.temp_value-content {
+     display: flex;
+     flex-direction: column;
+}
+
+#temp_value {
+     font-size: 60px;
+     font-weight: 800;
+}
+
+#other_infos {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 10px;
+}
+
+.info {
+     border: 1px solid #ffffff29;
+     border-radius: 10px;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+
+.info .fa-solid {
+     font-size: 25px;
+}
+
+#temp_max_icon {
+     color: tomato;
+}
+
+#temp_min_icon {
+     color: #3d7aec;
+}
+
+#humidity_icon {
+     color: #5b92f7;
+}
+
+#wind_icon {
+     color: #9d3dec;
+}
+
+@media (width <= 520px) {
+     .temp {
+          padding: 20px;
+     }
+
+     .temp img {
+          max-width: 100px;
+     }
+
+     #temp_value {
+          font-size: 40px;
+     }
+
+     .info h2 {
+          font-size: 16px;
+     }
+}
