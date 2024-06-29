@@ -89,7 +89,6 @@ class WeatherApp {
   }
 }
 
-// Inicializa a aplicação
 document.addEventListener("DOMContentLoaded", () => {
   new WeatherApp();
 });
